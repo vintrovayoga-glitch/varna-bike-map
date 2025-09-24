@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5fb92ed55654b13a557effd80afe3f77 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5fb92ed55654b13a557effd80afe3f77" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5fb92ed55654b13a557effd80afe3f77 = L.map(
+                "map_5fb92ed55654b13a557effd80afe3f77",
+                {
+                    center: [43.2141, 27.9147],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_86c5b501d879eaaaf2048283d29ed483 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_86c5b501d879eaaaf2048283d29ed483.addTo(map_5fb92ed55654b13a557effd80afe3f77);
+        
+    
+            var poly_line_390198192c215110e5642540a9c58552 = L.polyline(
+                [[43.2115, 27.9111], [43.213, 27.927]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fb92ed55654b13a557effd80afe3f77);
+        
+    
+            poly_line_390198192c215110e5642540a9c58552.bindTooltip(
+                `<div>
+                     Съществуваща велоалея
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_38c3e986d9db6369ed867857de6609cf = L.polyline(
+                [[43.2222, 27.893], [43.219, 27.925]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5fb92ed55654b13a557effd80afe3f77);
+        
+    
+            poly_line_38c3e986d9db6369ed867857de6609cf.bindTooltip(
+                `<div>
+                     Съществуваща велоалея
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_dafd8c2d7185e34639d3dfa58eda5b81 = L.polyline(
+                [[43.2155, 27.897], [43.2185, 27.91]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_5fb92ed55654b13a557effd80afe3f77);
+        
+    
+            poly_line_dafd8c2d7185e34639d3dfa58eda5b81.bindTooltip(
+                `<div>
+                     Планирана велоалея
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5c6f580c61847ad4be387f117c0599c1 = L.polyline(
+                [[43.207, 27.93], [43.213, 27.94]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_5fb92ed55654b13a557effd80afe3f77);
+        
+    
+            poly_line_5c6f580c61847ad4be387f117c0599c1.bindTooltip(
+                `<div>
+                     Планирана велоалея
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f328e79fdb0b914a675b43321539f1b6 = L.marker(
+                [43.2115, 27.9111],
+                {
+}
+            ).addTo(map_5fb92ed55654b13a557effd80afe3f77);
+        
+    
+            var icon_ab359a661767c2a72c977b40c4c8b089 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71446273bdabe56bf4279dc7aca6ab8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46951156bdae4b0ff39720a031c8ddfd = $(`<div id="html_46951156bdae4b0ff39720a031c8ddfd" style="width: 100.0%; height: 100.0%;">Начало бул. 'Владислав'</div>`)[0];
+                popup_71446273bdabe56bf4279dc7aca6ab8e.setContent(html_46951156bdae4b0ff39720a031c8ddfd);
+            
+        
+
+        marker_f328e79fdb0b914a675b43321539f1b6.bindPopup(popup_71446273bdabe56bf4279dc7aca6ab8e)
+        ;
+
+        
+    
+    
+                marker_f328e79fdb0b914a675b43321539f1b6.setIcon(icon_ab359a661767c2a72c977b40c4c8b089);
+            
+    
+            var marker_d7c56b5b1d916fe5e45995b2923982fb = L.marker(
+                [43.2222, 27.893],
+                {
+}
+            ).addTo(map_5fb92ed55654b13a557effd80afe3f77);
+        
+    
+            var icon_320f769df749dbdc5eff7e90f927eac2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b687ebf51b7d3c235f2ab4a1f3750288 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e13fd110f5398da04451cff993ef4547 = $(`<div id="html_e13fd110f5398da04451cff993ef4547" style="width: 100.0%; height: 100.0%;">Левски</div>`)[0];
+                popup_b687ebf51b7d3c235f2ab4a1f3750288.setContent(html_e13fd110f5398da04451cff993ef4547);
+            
+        
+
+        marker_d7c56b5b1d916fe5e45995b2923982fb.bindPopup(popup_b687ebf51b7d3c235f2ab4a1f3750288)
+        ;
+
+        
+    
+    
+                marker_d7c56b5b1d916fe5e45995b2923982fb.setIcon(icon_320f769df749dbdc5eff7e90f927eac2);
+            
+    
+            var marker_58e6a37cb9dff8278d6747220822663a = L.marker(
+                [43.213, 27.94],
+                {
+}
+            ).addTo(map_5fb92ed55654b13a557effd80afe3f77);
+        
+    
+            var icon_0b917e08e4cacf840531b73c514605ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb040f3a09a34a3cb4d36b598b00c9f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_445fb0f54c337061491f7c2a6f8e3617 = $(`<div id="html_445fb0f54c337061491f7c2a6f8e3617" style="width: 100.0%; height: 100.0%;">Аспарухов мост</div>`)[0];
+                popup_fb040f3a09a34a3cb4d36b598b00c9f1.setContent(html_445fb0f54c337061491f7c2a6f8e3617);
+            
+        
+
+        marker_58e6a37cb9dff8278d6747220822663a.bindPopup(popup_fb040f3a09a34a3cb4d36b598b00c9f1)
+        ;
+
+        
+    
+    
+                marker_58e6a37cb9dff8278d6747220822663a.setIcon(icon_0b917e08e4cacf840531b73c514605ce);
+            
+</script>
+</html>
